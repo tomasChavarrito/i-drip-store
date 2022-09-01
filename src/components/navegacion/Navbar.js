@@ -1,11 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import CartWidget from '../CartWidget/CW.jsx'
 
 const navbar = () => {
   return (
     <div>
     <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-            <a className="navbar-brand" href="#">I Drip Store</a>
+            <Link to='/'>
+                <img src='./IDS.Logo.jpeg' width='100'/>
+            </Link>
+            <a className="navbar-brand" href="#"></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -29,12 +34,14 @@ const navbar = () => {
                 </ul>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link disabled">Coming Soon</a>
-                </li>
+                <a className="nav-link" href="#">
+                    <CartWidget />
+                    </a>
+            </li>
             </ul>
             <form className="d-flex" role="search">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">🔍</button>
+        <button className="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
         </form>
         </div>
     </div>
