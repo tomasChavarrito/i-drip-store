@@ -4,6 +4,7 @@ import Navbar from './components/navegacion/Navbar'
  import Phones from './components/pages/Phone'
 import './App.css'
 import {Phone} from './components/pages/Props'
+import {ItemListContainer} from './components/ItemListContainer'
 
 const App=()=>{
 
@@ -16,15 +17,17 @@ const App=()=>{
 
       </Router>
 
-      <h1> E-commerce dedicada a la importación y venta de celulares de alta gama </h1>
+      <texto> E-commerce dedicada a la importación y venta de celulares de alta gama </texto>
       <hr/>
 
       <Phone 
         name='Iphone 13'
         marca='Apple'
-        stock='5'
+        stock='10'
         image= './iphone13.png'
         />
+      
+      <ItemListContainer/>
     </div>
   );
 }
