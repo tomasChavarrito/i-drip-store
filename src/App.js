@@ -22,10 +22,12 @@ const App=()=>{
 
       <Phone 
         name='Iphone 13'
-        marca='Apple'
-        stock='10'
+        marca=' Apple'
+        stock=' 10'
+        precio=' u$d1000'
         image= './iphone13.png'
         />
+
       
       <ItemListContainer/>
     </div>
