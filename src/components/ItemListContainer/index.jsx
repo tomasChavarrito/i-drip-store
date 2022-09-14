@@ -4,10 +4,38 @@ import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 
 const celulares = [
-    {id: 1, image: "./iphone13.png", title: "Iphone 13", marca: "Apple", stock:"10", precio: "u$d 1000", category:'Apple'},
-    {id: 2, image: "./IPH14.jpg", title: "Iphone 14 - Proximamente", marca: "Iphone", stock: "10", precio: "u$d 1400", category:'Apple'},
-    {id: 3, image: "./samsungS22.jpg", title: "Samsung S22 Ultra", marca: "Samsung", stock:"10", precio: " u$d 990", category:'Samsung'},
-    {id: 4, image: "./motoG200.jpg", title: "Moto G200", marca:"Motorola", stock:"10", precio: "u$d 600", category:'Motorola'}
+    {id: 1,
+     image: "./iphone13.png",
+     title: "Iphone 13",
+     marca: "Apple",
+     stock:"10",
+     precio: "u$d 1000",
+     category:'apple'},
+
+    {id: 2,
+     image: "./IPH14.jpg",
+     title: "Iphone 14 - Proximamente",
+     marca: "Iphone",
+     stock: "10",
+     precio: "u$d 1400",
+     category:'apple'},
+
+    {id: 3,
+     image: "./samsungS22.jpg",
+     title: "Samsung S22 Ultra",
+     marca: "Samsung",
+     stock:"10",
+     precio: " u$d 990",
+     category:'samsung'},
+
+
+    {id: 4,
+     image: "./motoG200.jpg",
+     title: "Moto G200",
+     marca:"Motorola", 
+     stock:"10",
+     precio: "u$d 600",
+     category:'motorola'}
 ]
 
 export const ItemListContainer=(texto)=>{
